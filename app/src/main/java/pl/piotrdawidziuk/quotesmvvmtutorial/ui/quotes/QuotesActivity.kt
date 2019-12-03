@@ -1,9 +1,10 @@
-package pl.piotrdawidziuk.quotesmvvmtutorial
+package pl.piotrdawidziuk.quotesmvvmtutorial.ui.quotes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import pl.piotrdawidziuk.quotesmvvmtutorial.R
 
-class Activity : AppCompatActivity() {
+class QuotesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
