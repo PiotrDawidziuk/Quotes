@@ -1,12 +1,12 @@
 package pl.piotrdawidziuk.quotesmvvmtutorial.data
 
-class FakeDatabase private constructor(){
+class FakeDatabase private constructor() {
+
+    var quoteDao = FakeQuoteDao()
+        private set
 
     companion object {
         @Volatile private var instance: FakeDatabase? = null
-
-        var quoteDao = FakeQuoteDao()
-            private set
 
         fun getInstance() =
             instance ?: synchronized(this) {
