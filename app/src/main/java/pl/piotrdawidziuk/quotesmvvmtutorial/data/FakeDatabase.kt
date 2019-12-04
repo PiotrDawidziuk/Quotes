@@ -6,7 +6,7 @@ class FakeDatabase private constructor(){
         @Volatile private var instance: FakeDatabase? = null
 
         var quoteDao = FakeQuoteDao()
-            private set 
+            private set
 
         fun getInstance() =
             instance ?: synchronized(this) {
